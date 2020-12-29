@@ -9,9 +9,11 @@ public class PlayerProjectileShooter : MonoBehaviour, IPlayer
 
     [SerializeField] float speed = 1000f;
 
+    private Camera playerCamera;
+
     void Start()
     {
-
+        playerCamera = Camera.main;
     }
 
     void Update()
@@ -26,7 +28,7 @@ public class PlayerProjectileShooter : MonoBehaviour, IPlayer
     {
         GameObject projectileObj = Instantiate(projectile, firePoint.position, Quaternion.identity) as GameObject;
         Rigidbody projectileRigidBody = projectileObj.GetComponent<Rigidbody>();
-        projectileRigidBody.velocity = Camera.main.transform.forward * speed * Time.deltaTime;
+        projectileRigidBody.velocity = playerCamera.transform.forward * speed * Time.deltaTime;
         // TODO: Remove projectiles after a while that will not hit anything
     }
 }
