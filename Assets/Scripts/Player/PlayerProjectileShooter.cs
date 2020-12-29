@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerProjectileShooter : MonoBehaviour
@@ -10,10 +8,6 @@ public class PlayerProjectileShooter : MonoBehaviour
     [SerializeField] float speed = 1000f;
 
     public Camera playerCamera;
-
-    void Start()
-    {
-    }
 
     void Update()
     {
