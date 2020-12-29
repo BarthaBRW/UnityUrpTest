@@ -30,6 +30,6 @@ public class BasicProjectile : MonoBehaviour, IProjectile
 
     private bool isPlayer(GameObject gameObject)
     {
-        return gameObject.GetComponent<IPlayer>() != null;
+        return gameObject.GetComponent<Player>() != null;
     }
 }
