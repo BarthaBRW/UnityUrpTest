@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerProjectileShooter : MonoBehaviour
+public class PlayerProjectileShooter : MonoBehaviour, IPlayer
 {
     public GameObject projectile;
     public Transform firePoint;
