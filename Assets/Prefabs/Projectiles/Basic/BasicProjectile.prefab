@@ -82,13 +82,13 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.2028467
-        inSlope: -0.44381607
-        outSlope: -0.44381607
+        value: 0.07891403
+        inSlope: -0.21561866
+        outSlope: -0.21561866
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.03608247
+        outWeight: 0.058583103
       - serializedVersion: 3
         time: 1
         value: 0
@@ -198,7 +198,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1818299271640158947
 Rigidbody:
@@ -233,7 +233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4236107619135081055
 Transform:
   m_ObjectHideFlags: 0
@@ -500,7 +500,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.7
       minScalar: 1
       maxCurve:
         serializedVersion: 2
