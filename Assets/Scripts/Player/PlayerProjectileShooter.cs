@@ -9,11 +9,10 @@ public class PlayerProjectileShooter : MonoBehaviour, IPlayer
 
     [SerializeField] float speed = 1000f;
 
-    private Camera playerCamera;
+    public Camera playerCamera;
 
     void Start()
     {
-        playerCamera = Camera.main;
     }
 
     void Update()
