@@ -745,14 +745,14 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6cfe423139c361a459da7ed9831d4b1c, type: 2}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -789,6 +789,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 43363918018737591, guid: 893b2ae5d43ac52478dead65f0080a1e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 43363918018737591, guid: 893b2ae5d43ac52478dead65f0080a1e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -856,6 +860,66 @@ PrefabInstance:
     - target: {fileID: 1659819048014960070, guid: 893b2ae5d43ac52478dead65f0080a1e, type: 3}
       propertyPath: m_Name
       value: LootDrop
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513562588424357327, guid: 893b2ae5d43ac52478dead65f0080a1e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513562588424357327, guid: 893b2ae5d43ac52478dead65f0080a1e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513562588424357327, guid: 893b2ae5d43ac52478dead65f0080a1e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8474164654889490576, guid: 893b2ae5d43ac52478dead65f0080a1e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8474164654889490576, guid: 893b2ae5d43ac52478dead65f0080a1e, type: 3}
+      propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8474164654889490576, guid: 893b2ae5d43ac52478dead65f0080a1e, type: 3}
+      propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[0].m_Name
+      value: Primary Color
+      objectReference: {fileID: 0}
+    - target: {fileID: 8474164654889490576, guid: 893b2ae5d43ac52478dead65f0080a1e, type: 3}
+      propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[0].m_Value.x
+      value: 0.1882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 8474164654889490576, guid: 893b2ae5d43ac52478dead65f0080a1e, type: 3}
+      propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[0].m_Value.y
+      value: 1.4980392
+      objectReference: {fileID: 0}
+    - target: {fileID: 8474164654889490576, guid: 893b2ae5d43ac52478dead65f0080a1e, type: 3}
+      propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[0].m_Overridden
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735735102595444310, guid: 893b2ae5d43ac52478dead65f0080a1e, type: 3}
+      propertyPath: m_Range
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735735102595444310, guid: 893b2ae5d43ac52478dead65f0080a1e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735735102595444310, guid: 893b2ae5d43ac52478dead65f0080a1e, type: 3}
+      propertyPath: m_Intensity
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735735102595444310, guid: 893b2ae5d43ac52478dead65f0080a1e, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735735102595444310, guid: 893b2ae5d43ac52478dead65f0080a1e, type: 3}
+      propertyPath: m_Shadows.m_Strength
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735735102595444310, guid: 893b2ae5d43ac52478dead65f0080a1e, type: 3}
+      propertyPath: m_Shadows.m_NearPlane
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 893b2ae5d43ac52478dead65f0080a1e, type: 3}
@@ -1447,7 +1511,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 0.6
+  m_Intensity: 0.1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
