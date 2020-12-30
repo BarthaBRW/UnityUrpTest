@@ -8,15 +8,15 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float gravity = -9.81f * 2;
     [SerializeField] float jumpHeight = 3f;
 
-    public CharacterController controller;
     public Transform groundCheck;
     [SerializeField] float groundDistance = 0.4f;
     public LayerMask groundMask;
     private Vector3 velocity;
+    private CharacterController controller;
 
     void Start()
     {
-
+        controller = GetComponent<CharacterController>();
     }
 
     void Update()
