@@ -1,10 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlaySound : MonoBehaviour
 {
     public AudioClip clip;
+
+    public bool is3D = false;
 
     void Start()
     {
@@ -12,7 +12,7 @@ public class PlaySound : MonoBehaviour
         tempGO.transform.position = gameObject.transform.position;
         AudioSource aSource = tempGO.AddComponent<AudioSource>();
         aSource.clip = clip;
-        aSource.spatialBlend = 0;
+        aSource.spatialBlend = is3D ? 1 : 0;
         aSource.playOnAwake = false;
         aSource.Play();
         Destroy(tempGO, clip.length);
