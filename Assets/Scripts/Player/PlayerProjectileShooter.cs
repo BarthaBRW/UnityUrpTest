@@ -1,9 +1,10 @@
 using UnityEngine;
-
+using UnityEngine.VFX;
 public class PlayerProjectileShooter : MonoBehaviour
 {
     public GameObject projectile;
     public Transform firePoint;
+    public VisualEffect muzzleEffect;
 
     [SerializeField] float speed = 1000f;
 
@@ -13,8 +14,14 @@ public class PlayerProjectileShooter : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            ShootProjectile();
+            Shoot();
         }
+    }
+
+    private void Shoot()
+    {
+        ShootProjectile();
+        ShowMuzzle();
     }
 
     private void ShootProjectile()
@@ -23,5 +30,10 @@ public class PlayerProjectileShooter : MonoBehaviour
         Rigidbody projectileRigidBody = projectileObj.GetComponent<Rigidbody>();
         projectileRigidBody.velocity = playerCamera.transform.forward * speed * Time.deltaTime;
         // TODO: Remove projectiles after a while that will not hit anything
+    }
+
+    private void ShowMuzzle()
+    {
+        muzzleEffect.Play();
     }
 }
